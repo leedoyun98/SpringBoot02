@@ -6,6 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Component @Getter @Setter
-public class UserDto {
+public class UserDTO {
     private String userid, password, name;
 }

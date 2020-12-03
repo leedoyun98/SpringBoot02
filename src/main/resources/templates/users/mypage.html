@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>마이페이지</h1>
+    <a href="#" id="home">홈으로</a>
+    <form>
+        <table>
+            <tr>
+                <td>Id</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PW</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+    <script>
+    document.getElementById('home')
+        .addEventListener('click',e=>{
+            location.href = '/'
+        })
+        alert(`마이페이지로 넘어온 유저 로그인아이디는 ${sessionStorage.getItem('loginUserid')}`)
+        $.getJSON(`users/${sessionStorage.getItem('loginUserid')}`, d=>{
+            alert(`마이페이지 데이터 전송 성공`)
+
+            })
+        
+    </script>
+</body>
+</html>

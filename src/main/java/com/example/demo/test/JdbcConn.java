@@ -26,7 +26,6 @@ public class JdbcConn {
             try {
                 conn.close();
             } catch (Exception e) {
-                // TODO Auto-generated catch  block
                 e.printStackTrace();
             }
         }

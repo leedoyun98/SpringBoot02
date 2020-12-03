@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 <body>
-<h1>Home</h1>
-<a href="#" id="join" > 회원가입</a>
-<span style="width: 50pc"> </span>
-<a href="#" id="login" >로그인</a>
-<script>
-    document.getElementById('join')
-    .addEventListener('click', e=>{
-        location.href = '/move/users/join'
-    })
-    document.getElementById('login')
-    .addEventListener('click', e=>{
-        location.href = '/move/users/login'
-    })
-</script>
-</body>
+    <h1>Home</h1>
+    <a href="#" id="join">회원가입</a><br>
+    <a href="#" id="login">로그인</a><br>
+    <a href="#" id="mypage">마이페이지</a><br>
+    <a href="#" id="update">회원정보수정/탈퇴</a><br>
 
+
+    <script>
+        document.getElementById('join')
+        .addEventListener('click', e=>{
+            location.href = '/move/users/join'
+        })
+        document.getElementById('login')
+        .addEventListener('click', e=>{
+            location.href = '/move/users/login'
+        })
+        document.getElementById('mypage')
+        .addEventListener('click', e=>{
+            location.href = '/move/users/mypage'
+        })
+        document.getElementById('update')
+        .addEventListener('click', e=>{
+            location.href = '/move/users/update'
+        })
+
+
+
+    </script>
     
+</body>
 </html>
