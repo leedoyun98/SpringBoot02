@@ -50,7 +50,7 @@
                     if(d.message !== 'FAILURE'){
                         location.href = '/move/users/mypage'
                        alert(`로그인 이름 ${d.loginUser.userid}`)
-                       sessionStorage.setItem('loginUserid', JSON.stringify(d.loginUser.userid))
+                       sessionStorage.setItem('loginUserid', d.loginUser.userid)
                     }else{
                         alert(`로그인실패`)
                         location.href = '/move/users/login'

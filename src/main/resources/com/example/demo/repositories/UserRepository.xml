@@ -8,4 +8,15 @@
     <select id="login" parameterType="com.example.demo.domains.UserDTO" resultType="com.example.demo.domains.UserDTO">
         select * from users where userid like #{userid} and password like #{password}
     </select>
+    <select  id="selectById" resultType="com.example.demo.domains.UserDTO" 
+                             parameterType="string">
+        select*from users
+        where userid like #{userid}
+    </select>
+    <update id="update" parameterType="com.example.demo.domains.UserDTO" >
+        update users set password = #{password} where userid like #{userid}
+    </update>
+    <delete id="delete" parameterType="com.example.demo.domains.UserDTO">
+    delete from users where userid like #{userid}
+    </delete>
 </mapper>

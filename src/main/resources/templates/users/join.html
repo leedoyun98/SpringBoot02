@@ -60,8 +60,12 @@
                 success: d=>{
                     if(d.message === 'SUCCESS'){
                         alert('SUCCESS')
+                        if(d.message === 'SUCCESS'){
+                            location.href = '/move/users/login'
+                        }
                     }else{
                         alert('FAILURE')
+                        location.href = '/move/users/join'
                     }
                 },
                 error: e=>{
