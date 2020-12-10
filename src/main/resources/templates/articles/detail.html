@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {border: black 1px solid}
+        table tr {border: black 1px solid}
+        table tr td {border: black 1px solid}
+        table tr th {border: black 1px solid}
+    </style>
+</head>
+<body>
+    <h1> Detail </h1>
+    <a id="home" href="#"> Go Home </a>
+    <table class="table">
+        <thead>
+            <tr class="table-active">
+                <th style="width: 10%">글번호 : <span id="artNum">1</span></th>
+                <th style="width: 30%">글쓴이ID : <span id="writerId">hong</span></th>
+                <th style="width: 30%">작성일 : <span id="regDate">2020-12-01</span></th>
+                <th style="width: 30%">조회수 : <span id="count">100</span></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr><td colspan="4" style="width: 100%"><span id="title">테스트</span></td> </tr>
+            <tr><td colspan="4" style="width: 100%">
+                  <textarea id="content">
+                      게시글 테스트
+                  </textarea>
+                </td> </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('home').addEventListener('click', e => { location.href="/"})
+        alert(`조회한 게시글번호: ${localStorage.getItem('artNum')}`)
+   </script>
+</body>
+</html>
